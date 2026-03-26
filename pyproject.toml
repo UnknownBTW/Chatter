@@ -1,0 +1,11 @@
+[project]
+name = "chatter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyinstaller>=6.19.0",
+    "pyqt6>=6.10.2",
+    "pyupdater>=4.0",
+]
