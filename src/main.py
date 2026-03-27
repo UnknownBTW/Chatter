@@ -10,7 +10,7 @@ class ClientConfig(object):
 
 
 Client = Client(ClientConfig())
-app_update = Client.update_check("Chatter", "0.1.0")
+app_update = Client.update_check("Chatter", "0.0.1")
 
 if __name__ == "__main__":
 
