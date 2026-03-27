@@ -8,7 +8,7 @@ def main():
     window.title("Chatter")
     window.geometry("400x300")
 
-    button = tk.Button(window, text="Click Me", command=on_button_click)
+    button = tk.Button(window, text="Click Me", command=on_button_click, font=("Arial", 16), bg="#4CAF50", fg="black", padx=20, pady=10)
     button.pack(pady=20)
 
     window.mainloop()
