@@ -1,4 +1,4 @@
 APP_NAME = "Chatter"
-APP_VERSION = "0.0.1"
+APP_VERSION = "0.0.2"
 UPDATE_URLS = ["https://github.com/UnknownBTW/Chatter/archive/refs/tags/pre-release.zip"]  # Replace with your actual update URLs
 PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuCgw0QnrCuR5hcweb+koZOv8HiVD4L+dU5zPEDXLq8tbfiIEgxvpBF3mdju46K3pkeAmQHTc0i85lZvM6gdekaOgbeLoNJA2+3SyuZpBHiFOaxvWKM4aH8Sfp7zxrVT9k7pkaMAVvXH3W/eRAPvm2FTLqq61Qg9UIxOfv6SKvQ/N44vGOCjjPHRAZrav9h8DbOhYmjVOCnLw8zHDestCIelZiV7Vf5hhUH11p7dJeyW8Uw9Pqsc5xE93IL2s4x/krdU3KawaIKkpxaoIAVbukRG6EZHtjKuub4Un86HplSyTjdnJfKYxV2h9m2ljQcaCq5XLDl3d6y2fHXOx+4GmxQIDAQAB"  # Replace with your actual public key
