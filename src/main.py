@@ -1,22 +1,24 @@
+
+import requests
 from Chat import main
-from pyupdater.client import Client
-from Client_config import APP_NAME, APP_VERSION, UPDATE_URLS, PUBLIC_KEY
 
-class ClientConfig(object):
-    APP_NAME = APP_NAME
-    APP_VERSION = APP_VERSION
-    UPDATE_URLS = UPDATE_URLS
-    PUBLIC_KEY = PUBLIC_KEY
+# Your current local version
+current_version = "0.0.1"
 
+# GitHub API URL for latest release
+url = f"https://api.github.com/repos/UnknownBTW/Chatter/releases/latest"
 
-Client = Client(ClientConfig())
-app_update = Client.update_check("Chatter", "0.0.1")
+try:
+    response = requests.get(url)
+    response.raise_for_status()
+    latest_release = response.json()
+    latest_version = latest_release["tag_name"].lstrip("v")  # remove 'v' if you use tags like v0.0.1
 
-if __name__ == "__main__":
+    if current_version < latest_version:
+        print(f"New version available: {latest_version}")
+        
+    else:
+        main()
 
-    if app_update:
-        app_update.download()
-        if app_update.is_downloaded():
-            app_update.extract_restart()
-
-    main()
+except requests.RequestException as e:
+    print(f"Failed to check updates: {e}")

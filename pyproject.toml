@@ -8,4 +8,5 @@ dependencies = [
     "pyinstaller>=6.19.0",
     "pyqt6>=6.10.2",
     "pyupdater>=4.0",
+    "requests>=2.33.0",
 ]
