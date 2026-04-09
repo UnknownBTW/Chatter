@@ -19,10 +19,12 @@ class Login(ctk.CTkFrame):
     def build_ui(self):
         self.email_entry = ctk.CTkEntry(self, placeholder_text="Email")
         self.email_entry.place(relx=0.5, rely=0.5, anchor="center", y=-50)
+        self.email_entry.configure(width=200, height=30)
 
         self.password_entry = ctk.CTkEntry(self, placeholder_text="Password", show="*")
         self.password_entry.place(relx=0.5, rely=0.5, anchor="center", y=0)
-        
+        self.password_entry.configure(width=200, height=30)
+
         self.status_label = ctk.CTkLabel(self, text=self.status)
         self.status_label.place(relx=0.5, rely=0.5, anchor="center", y=30)
         self.status_label.configure(text_color="red")
